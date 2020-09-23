@@ -3,10 +3,14 @@ import { useParams } from 'react-router-dom';
 
 import About from "pages/About.js";
 import DataScience from "pages/DataScience.js";
+import Teaching from "pages/Teaching.js";
+import Tutoring from "pages/Tutoring.js";
 
 export const pages = {
-    about: About,
-    datascience: DataScience,
+  about: About,
+  datascience: DataScience,
+  teaching: Teaching,
+  tutoring: Tutoring,
 }
 
 export default () => {

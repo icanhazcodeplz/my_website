@@ -3,13 +3,7 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { ReactComponent as SvgDotPatternIcon } from "../images/dot-pattern.svg";
 import { SectionHeading as HeadingTitle } from "../components/misc/Headings.js";
-import HeaderBase, {
-  LogoLink as LogoLinkBase,
-  NavLinks,
-  NavLink as NavLinkBase,
-  // PrimaryLink as PrimaryLinkBase
-} from "../components/headers/default.js";
-import {Content2Xl} from "../components/misc/Layouts";
+import HeaderBase from "../components/headers/default.js";
 import matrixImage from "../images/matrix.jpg"
 import covImage from "../images/covid-app.png"
 import bulbImage from "../images/lightbulb.jpg"
@@ -30,13 +24,14 @@ const Image = styled.div(props => [
   tw`rounded md:w-1/2 lg:w-5/12 xl:w-1/3 flex-shrink-0 h-80 md:h-144 bg-cover bg-center mx-4 sm:mx-8 md:mx-4 lg:mx-8`
 ]);
 const Details = tw.div`mt-4 md:mt-0 md:max-w-md mx-4 sm:mx-8 md:mx-4 lg:mx-8`;
+const DetailsSmall = tw.div`mt-2 md:mt-0 md:max-w-md mx-2 sm:mx-4 md:mx-2 lg:mx-4`;
 const Title = tw.div`text-4xl font-bold text-gray-900`;
-const Spacer = tw.div`text-3xl font-bold text-gray-lightest`;
 const Subtitle = tw.div`text-2xl font-bold tracking-wide text-gray-800`;
 const Thin = tw.div`font-thin tracking-wide text-gray-800`;
 const Subtitle2 = tw.div`text-lg font-bold tracking-wide text-gray-800`;
 const Description = tw.div`mt-2 text-sm leading-tight`;
 const Link = tw.a`inline-block mt-4 text-sm text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-500`;
+const LinkBig = tw.a`inline-block mt-2 text-3xl text-primary-500 font-bold cursor-pointer transition duration-300 border-b-2 border-transparent hover:border-primary-200`;
 
 const SvgDotPattern1 = tw(
   SvgDotPatternIcon
@@ -52,7 +47,6 @@ const SvgDotPattern4 = tw(
 )`absolute bottom-0 right-0 transform translate-x-20 rotate-90 -translate-y-24 -z-10 opacity-25 text-primary-500 fill-current w-24`;
 
 export default () => {
-
   return (
     <div>
     <Header/>
@@ -72,20 +66,25 @@ export default () => {
               <Title> Experience </Title>
                 <Subtitle> Data Scientist, Futurice </Subtitle>
                   <Thin> Helsinki, Finland, Oct 2017 - Dec 2018</Thin>
-                  <Subtitle2> &nbsp; Full-Stack Machine Learning Engineer</Subtitle2>
+                  <DetailsSmall>
+                  <Subtitle2> Full-Stack Machine Learning Engineer</Subtitle2>
                     <Description> &bull; Developed an ensemble machine learning model that predicted relevant tags for news articles. </Description>
                     <Description> &bull; Deployed the model as a service for the largest news and media company in Finland. </Description>
                     <Description> &bull; The solution simplified the workflow for 200+ journalists and improved the experience of following tags for 2mil+ users. </Description>
-                  <Subtitle2> &nbsp; Data Science Educator </Subtitle2>
+                    <br/>
+                  <Subtitle2> Data Science Educator </Subtitle2>
                     <Description> &bull; Helped build a 7-day course called the "Artificial Intelligence Academy" that covered topics in data science and machine learning.  </Description>
                     <Description> &bull; Taught over 40 class sessions to engineers, designers, and business leaders, each lasting 3-7 hours. </Description>
                     <Description> &bull; Students learned how to evaluate the quality of data, where to apply machine learning, and how to do so. </Description>
+                  </DetailsSmall>
                 <Description> </Description>
                 <Subtitle> Data Scientist, Enphase Energy </Subtitle>
                   <Thin> Petaluma, CA, May 2016 – January 2017</Thin>
+                  <DetailsSmall>
                   <Description> &bull; Created aggregate machine learning models that predicted daily household electricity consumption and solar power production. </Description>
                   <Description> &bull; Architected and built software that quantified the value of installing a home battery system. </Description>
                   <Description> &bull; These solutions enabled Enphase to intelligently size battery systems for potential customers, increasing potential sales. </Description>
+                  </DetailsSmall>
             </Details>
           </Card>
           <Card key={2} reversed={true}>
@@ -105,17 +104,18 @@ export default () => {
               <Subtitle> The Data Incubator </Subtitle>
                 <Thin> San Francisco, CA, May 2016 </Thin>
                 <Description> Highly selective, intensive 8-week data science boot camp. </Description>
-
-              <Spacer> .</Spacer>
+              <br/>
               <Subtitle> Carnegie Mellon University </Subtitle>
                 <Thin> Pittsburgh, PA, May 2013 </Thin>
                 <Description> M.S. Mechanical Engineering </Description>
-
-              <Spacer> .</Spacer>
+              <br/>
               <Subtitle> Occidental College </Subtitle>
                 <Thin> Los Angeles, CA, May 2012 </Thin>
                 <Description> B.A. Physics and Economics, Minor Math, Summa Cum Laude, Phi Beta Kappa </Description>
             </Details>
+          </Card>
+          <Card>
+            <LinkBig href="mailto:magnusson.brent@gmail.com">Hire me as a Data Scientist!</LinkBig>
           </Card>
         </Content>
       </SingleColumn>

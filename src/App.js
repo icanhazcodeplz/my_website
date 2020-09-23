@@ -19,12 +19,11 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 import PageRenderer from "PageRenderer.js";
-import MainLandingPageNew from "MainLandingPageNew.js";
 import LandingPage from "LandingPage.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AnimationRevealPage from "./helpers/AnimationRevealPage";
-import Header from "components/headers/light.js";
+// import Header from "components/headers/default.js";
 import Footer from "components/footers/SmallCenteredFooter.js";
 
 

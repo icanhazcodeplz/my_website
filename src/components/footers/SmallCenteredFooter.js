@@ -9,7 +9,7 @@ import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
 
 
 const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`
-const Content = tw.div`max-w-screen-xl mx-auto py-10 lg:py-24`;
+const Content = tw.div`max-w-screen-xl mx-auto py-10 lg:py-10`;
 
 const Row = tw.div`flex items-center justify-center flex-col px-8`
 
@@ -18,9 +18,9 @@ const LogoImg = tw.img`w-8`;
 const LogoText = tw.h5`ml-2 text-2xl font-black tracking-wider`;
 
 // const LinksContainer = tw.div`mt-8 font-medium flex flex-wrap justify-center items-center flex-col sm:flex-row`
-const Link = tw.a`border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-1 transition duration-300 mt-2 mx-4`;
+const Link = tw.a`border-b-2 border-transparent hocus:text-gray-300 hocus:border-gray-300 pb-1 transition duration-300 mt-2 mx-4 whitespace-no-wrap`;
 
-const SocialLinksContainer = tw.div`mt-10`;
+const SocialLinksContainer = tw.div`mt-4`;
 const SocialLink = styled.a`
   ${tw`cursor-pointer inline-block text-gray-100 hover:text-gray-500 transition duration-300 mx-4`}
   svg {
@@ -28,7 +28,7 @@ const SocialLink = styled.a`
   }
 `;
 
-const BottomText = tw.p`text-center mt-10 font-medium tracking-wide text-sm text-gray-600`
+const BottomText = tw.p`text-center mt-4 font-medium tracking-wide text-sm text-gray-600`
 export default () => {
   return (
     <Container>
@@ -58,8 +58,8 @@ export default () => {
           </SocialLinksContainer>
           <BottomText>
             <Link href="https://github.com/icanhazcodeplz/my_website">Source code</Link>
-            <Link href="https://treact.owaiskhan.me/">Adapted from Treact</Link>
-            <Link href="https://azure.microsoft.com/">Hosted on Azure</Link>
+            <Link href="https://treact.owaiskhan.me/">Template from Treact</Link>
+            <Link href="mailto:magnusson.brent@gmail.com">Hire me!</Link>
           </BottomText>
         </Row>
       </Content>

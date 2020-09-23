@@ -6,7 +6,6 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
-import logo from "../../images/logo.svg";
 import { ReactComponent as MenuIcon } from "feather-icons/dist/icons/menu.svg";
 import { ReactComponent as CloseIcon } from "feather-icons/dist/icons/x.svg";
 import logoImageSrc from "../../images/bm-p-on-w.png";
@@ -73,11 +72,10 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
+      <NavLink href="/">About</NavLink>
       <NavLink href="/datascience">Data Science Resume</NavLink>
-      {/*<NavLink href="/teaching">Teaching Resume</NavLink>*/}
-      {/*<NavLink href="/tutoring">Tutoring</NavLink>*/}
-      <NavLink href="mailto:magnusson.brent@gmail.com">Hire me!</NavLink>
-      {/*<NavLink href="/about">About</NavLink>*/}
+      <NavLink href="/teaching">Teaching Resume</NavLink>
+      <NavLink href="/tutoring">Tutoring</NavLink>
     </NavLinks>
   ];
 
