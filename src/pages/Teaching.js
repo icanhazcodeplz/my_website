@@ -67,7 +67,7 @@ export default () => {
               <Title> Education </Title>
               <Subtitle> City University of Seattle </Subtitle>
                 <Thin> Everett, WA, June 2020</Thin>
-                <Description> Secondary math credential valid through July, 2021 </Description>
+                <Description> WA State Teaching Credential with endorsements in Secondary Math, Physics, and Computer Science </Description>
               <br/>
               <Subtitle> Carnegie Mellon University </Subtitle>
                 <Thin> Pittsburgh, PA, May 2013 </Thin>
@@ -134,7 +134,7 @@ export default () => {
               <Title> Youtube Teaching </Title>
                 <Subtitle> AlwaysLearning </Subtitle>
                   <DetailsSmall>
-                    <Description> &bull; I have created 18 videos (so far) that have a total of 27k views. </Description>
+                    <Description> &bull; I have created 18 videos (so far) that have a total of 33k views. </Description>
                     <Link href="https://www.youtube.com/channel/UCvvZQbmbnRzqwy3tDu7vuwg">Check it out here</Link>
                   </DetailsSmall>
            </Details>

@@ -35,13 +35,14 @@ const Link = tw.a`inline-block mt-2 text-xl text-purple-300 font-bold cursor-poi
 export default ({
   heading = "Hello!",
   description = `I am a (sometimes) normal human who likes to code, play with data, teach, and throw frisbees. After
-   working as various forms of an engineer for about 5 years, I went back to school in 2019 to get a teaching 
-   credential with the hopes of teaching high school math. Aaaaaand then COVID... I didn't quite finish 
-   the official credential (although I received an emergency cert for this school year), but I certainly learned a ton 
-   as a student teacher. I am now excited to head back into the
+   working as various forms of an engineer for about 5 years, I went back to school in 2019 and got a teaching 
+   credential with endorsements in high school math, physics, and computer science. While I love teaching and plan to 
+   incorporate it into my career is some way, I have decided that for now, working as an engineer is a better 
+   fit for me. I certainly learned a ton as a student teacher, and I am now excited to head back into the
     tech world with some newly learned social skills (I'm pretty sure my patience is now infinite after learning to manage
-    a class of 30 ninth graders). I am actively looking for a full-time Data Scientist role, but would be interested
-    in part-time or gig work as well. I am also working part-time as an online tutor to scratch my teaching itch.`,
+    a class of 30 ninth graders). I am actively looking for a full-time Data Scientist or Software Engineering role, 
+    but would be interested in part-time or gig work as well. I am also working part-time as an online tutor to scratch 
+    my teaching itch.`,
   description2 = `When I am not working, I like to trail-run, hike, rock-climb, play disc golf, read, meditate, and 
   spend time with family and friends.`,
   imageSrc = serverIllustrationImageSrc,
