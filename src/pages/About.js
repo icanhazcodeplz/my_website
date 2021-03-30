@@ -34,11 +34,11 @@ const Link = tw.a`inline-block mt-2 text-xl text-purple-300 font-bold cursor-poi
 
 export default ({
   heading = "Hello!",
-  description = `I am a (sometimes) normal human who likes to code, play with data, teach, and throw frisbees. After
+  description = `I am a (sometimes) normal human who likes to code, teach, and throw frisbees. After
    working as various forms of an engineer for about 5 years, I went back to school in 2019 and got a teaching 
    credential with endorsements in high school math, physics, and computer science. While I love teaching and plan to 
    incorporate it into my career is some way, I have decided that for now, working as an engineer is a better 
-   fit for me. I certainly learned a ton as a student teacher, and I am now excited to head back into the
+   fit for me. I certainly learned a ton as a student teacher, and I am excited to be back in the
     tech world with some newly learned social skills (I'm pretty sure my patience is now infinite after learning to manage
     a class of 30 ninth graders). I am actively looking for a full-time Data Scientist or Software Engineering role, 
     but would be interested in part-time or gig work as well. I am also working part-time as an online tutor to scratch 
@@ -58,6 +58,8 @@ export default ({
                 <Heading>{heading}</Heading>
                 <Description>{description}</Description>
                 <Link href="/datascience">Data Science Resume</Link>
+                <br/>
+                <Link href="/software">Software Engineer Resume</Link>
                 <br/>
                 <Link href="/teaching">Teaching Resume</Link>
                 <br/>

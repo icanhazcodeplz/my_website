@@ -11,7 +11,7 @@ import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
 const Container = tw(ContainerBase)`bg-gray-900 text-gray-100 -mx-8 -mb-8`
 const Content = tw.div`max-w-screen-xl mx-auto py-10 lg:py-10`;
 
-const Row = tw.div`flex items-center justify-center flex-col px-8`
+const Row = tw.div`flex items-center justify-center flex-col px-8`;
 
 const LogoContainer = tw.div`flex items-center justify-center md:justify-start`;
 const LogoImg = tw.img`w-8`;

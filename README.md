@@ -1,5 +1,12 @@
 This is the code that I used to create www.bmagnusson.com, which is currently being hosted on Google Cloud 
 
+## Deploying to Google Cloud App Engine
+```shell
+yarn build
+gcloud config set project bmagnusson
+gcloud app deploy
+```
+
 I downloaded the template from [Treact](https://treact.owaiskhan.me/). The following is the
 README from that repo.
 

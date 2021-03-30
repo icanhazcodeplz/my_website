@@ -74,8 +74,9 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     <NavLinks key={1}>
       <NavLink href="/">About</NavLink>
       <NavLink href="/datascience">Data Science Resume</NavLink>
+      <NavLink href="/software">Software Engineer Resume</NavLink>
       <NavLink href="/teaching">Teaching Resume</NavLink>
-      <NavLink href="/tutoring">Tutoring</NavLink>
+      <NavLink href="/tutoring">Tutoring Services</NavLink>
     </NavLinks>
   ];
 
